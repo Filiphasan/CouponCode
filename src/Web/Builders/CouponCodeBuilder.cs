@@ -46,9 +46,14 @@ public class CouponCodeBuilder
 
     public IEnumerable<string> Build()
     {
+        var generatedCodes = new HashSet<string>();
         for (int i = 0; i < _count; i++)
         {
-            var code = GenerateCode();
+            string code;
+            do
+            {
+                code = GenerateCode();
+            } while (!generatedCodes.Add(code));
             yield return code;
         }
     }
@@ -65,7 +70,7 @@ public class CouponCodeBuilder
         {
             return false;
         }
-        
+
         var firstChar = _availableCharModelList.First(x => x.Char == code[0]);
         var lastChar = _availableCharModelList.First(x => x.Char == code[^1]);
         var otherChars = code[1..^1];
@@ -83,7 +88,7 @@ public class CouponCodeBuilder
         var chars = new char[actualLength];
         for (int i = 0; i < actualLength; i++)
         {
-            var randomIndex = RandomNumberGenerator.GetInt32(0, availableCharsCount);
+            var randomIndex = RandomNumberGenerator.GetInt32(0, 255) % availableCharsCount;
             chars[i] = _availableCharModelList.First(x => x.Index == randomIndex).Char;
         }
 
