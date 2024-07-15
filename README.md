@@ -43,7 +43,7 @@ var codes = new CouponCodeBuilder()
             .ToList();
 ````
 
-Validate Codes
+Validate Code
 
 ````csharp
 var isValid = new CouponCodeBuilder()
