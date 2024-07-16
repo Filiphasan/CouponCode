@@ -1,4 +1,4 @@
-# Shared ⬇️
+# Information ⬇️
 This repository contains below projects, Click on the project name to go to the project.
 - [Coupon Code Generator and Validator](#coupon-code)
 - [Bill OCR](#bill-ocr)
