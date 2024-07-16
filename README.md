@@ -77,7 +77,7 @@ Simulate Bill OCR process
 ## Endpoints
 - Check endpoints ➡️ [BillOcrEndpoint](src/Web/Endpoints/BillOcrEndpoint.cs)
 
-## Description
+## OCR Response Information
 ````json
 {
     "description": "SAAT",
@@ -111,3 +111,38 @@ Simulate Bill OCR process
 - vertices second item: Right top corner
 - vertices third item: Right bottom corner
 - vertices fourth item: Left bottom corner
+
+## Bill OCR Endpoint Output
+````
+TEŞEKKÜRLER
+GUNEYDOĞU TEKS. GIDA INS SAN. LTD.STI.
+ORNEKTEPE MAH.ETIBANK CAD.SARAY APT.
+N:43-1 BEYOĞLU/ISTANBUL
+GÜNEŞLİ V.D. 4350078928 V. NO.
+TARIH : 26.08.2020
+SAAT : 15:27
+FİŞ NO : 0082 15:27
+54491250
+2 ADx 2,75
+CC.COCA COLA CAM 200 08 *5,50
+2701084
+1,566 KGx 1,99
+MANAV DOMATES PETEME *3,32
+2701076
+0,358 KGx 4,99
+MANAV BIBER CARLISTO 08 *1,79
+4
+EKMEK CIFTLI 01 *1,25
+TOPKDV *0,80
+TOPLAM *11,86
+NAKİT *20,00
+KDV KDV TUTARI KDV'LI TOPLAM
+01 *0,01 *1,25
+08 *0,79 *10,61
+KASİYER : SUPERVISOR
+00 0001/020/000084/1//82/
+PARA USTÜ *8,14
+KASİYER: 1
+2 NO:1330 EKÜ NO:0001
+MF YAB 15017876
+````
