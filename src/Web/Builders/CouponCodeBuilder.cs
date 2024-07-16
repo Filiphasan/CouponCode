@@ -65,7 +65,7 @@ public class CouponCodeBuilder
             return false;
         }
 
-        var allCharsValid = code.All(ch => _availableCharModelList.Any(x => x.Char == ch));
+        var allCharsValid = code.All(ch => _availableCharModelList.Exists(x => x.Char == ch));
         if (!allCharsValid)
         {
             return false;
@@ -88,7 +88,7 @@ public class CouponCodeBuilder
         var chars = new char[actualLength];
         for (int i = 0; i < actualLength; i++)
         {
-            var randomIndex = RandomNumberGenerator.GetInt32(0, 255) % availableCharsCount;
+            var randomIndex = RandomNumberGenerator.GetInt32(0, _availableCharModelList.Count);
             chars[i] = _availableCharModelList.First(x => x.Index == randomIndex).Char;
         }
 
