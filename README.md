@@ -1,3 +1,38 @@
+# Shared ⬇️
+
+## Dependencies
+- Dotnet 8 or higher SDK (https://dotnet.microsoft.com/download)
+
+## Install
+Run the following command to install the project.
+````shell
+git clone https://github.com/Filiphasan/CouponCode.git
+````
+
+## Project Usage
+Run the following commands to get started with the project.
+
+### Restore
+````shell
+dotnet restore
+`````
+
+### Build
+````shell
+dotnet build
+````
+
+### Run
+````shell
+dotnet run --project src/Web
+````
+
+### Test
+````shell
+dotnet test
+````
+------
+
 # Coupon Code
 
 Coupon Code Generator and Validator, without saving generated code. 
@@ -6,37 +41,8 @@ Generate multiple codes and validate them one by one. No need to save the genera
 ## Endpoints
 - Check endpoints ➡️ [CouponCodeEndpoint](src/Web/Endpoints/CouponCodeEndpoint.cs)
 
-## Dependencies
-- Dotnet 8 or higher SDK (https://dotnet.microsoft.com/download)
-
-## Install
-````shell
-git clone https://github.com/Filiphasan/CouponCode.git
-````
-
 ## Benchmark
 Generate and Validate 10000000 Codes in under 1 minute
-
-## Project Usage
-Restore
-````shell
-dotnet restore
-`````
-
-Build
-````shell
-dotnet build
-````
-
-Run
-````shell
-dotnet run --project src/Web
-````
-
-Test
-````shell
-dotnet test
-````
 
 ## CodeUsage
 
@@ -60,7 +66,7 @@ var isValid = new CouponCodeBuilder()
                 .Validate(code); // Validate coupon code
 ````
 
-
+---
 # Bill OCR
 
 Simulate Bill OCR process
