@@ -4,7 +4,7 @@ This repository contains below projects, Click on the project name to go to the 
 - [Bill OCR](#bill-ocr)
 
 ## Dependencies
-- Dotnet 8 or higher SDK (https://dotnet.microsoft.com/download)
+- Dotnet 8 or higher SDK [Download SDK](https://dotnet.microsoft.com/download)
 
 ## Install
 Run the following command to install the project.
