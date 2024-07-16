@@ -13,7 +13,7 @@ git clone https://github.com/Filiphasan/CouponCode.git
 ````
 
 ## Project Usage
-Run the following commands to get started with the project.
+Run the following commands to get build, run or test with the project.
 
 ### Restore
 ````shell
